@@ -12,7 +12,7 @@ let arrOfArtists = [
 
 let artist = document.querySelector('#artist');
 
-btn_prev.onclick = function () {
+btn_prev.addEventListener('click', function () {
     images[i].className = '';
     i--;
 
@@ -22,9 +22,9 @@ btn_prev.onclick = function () {
 
     images[i].className = 'showed';
     artist.innerHTML = arrOfArtists[i];
-}
+}); 
 
-btn_next.onclick = function () {
+btn_next.addEventListener('click',function () {
     images[i].className = '';
     i++;
 
@@ -34,4 +34,4 @@ btn_next.onclick = function () {
 
     images[i].className = 'showed';
     artist.innerHTML = arrOfArtists[i];
-}
+});
