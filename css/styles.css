@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 860px;
+    margin-top: 10px;
+    margin: 20px auto 0px auto;
+    text-align: center;
+}
+
+#container .photos{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+#container .photos img{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    opacity: 0;
+    transition: all 1.7s;
+}
+
+#container .photos img.showed{
+    opacity: 1;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: raw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.prev, .next{
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/arrow.png');
+    background-position: 0 0;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#next {
+    transform: rotate(180deg);
+}
